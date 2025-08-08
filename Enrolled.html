@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Enrolled students</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Script.js"></script>
 </head>
 <body>
-    
+
+    <table>
+        <tr>
+            <th>CourseID</th>
+            <th>StudentName</th>
+            <th>EmailID</th>
+            <th>courseName</th>
+        </tr>
+        <tbody id="enrolledtable">
+            <!-- Enrolled students will be populated here -->
+        </tbody>
+    </table>
+
+
+
+    <script>
+        window.onload = function() {
+            showEnrolledStudents();
+        }
+    </script>
 </body>
 </html>

@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
+    
+    <div class="container2">
+        <form action="http://localhost:8080/api/Course/StudentRegister" method="post">
+            <h1>KickStart The Course Free Courses</h1>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter your name" required><br>
+            <label for="emailId">EmailId</label>
+            <input type="email" name="emailId" placeholder="Enter your email" required><br>
+            <label for="courseName">CourseName</label>
+            <select name="courseName" id="course"><br>
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="Python with ML/AI">Python with ML/AI</option>
+                <option value="Cloud + Devops">Cloud + Devops</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+            <button class="regbtn" type="submit">Submit</button>
+        </form>
+    </div>
+
     
 </body>
 </html>
